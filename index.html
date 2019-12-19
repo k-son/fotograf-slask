@@ -9,6 +9,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="css/contactform.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Fotograf Śląsk</title>
 </head>
@@ -181,41 +182,48 @@
           <p class="lead text-muted"><a class="mr-2" href="mailto:spacerpozdjecia@gmail.com"><i class="fas fa-envelope"></i></a> spacerpozdjecia@gmail.com</p>
           <p class="lead">Staram się odpowiadać w ciągu 24 godzin.</p>
         </div>
+        <!-- FORM -->
         <div class="col col-md-8">
-          <form action="">
-            <div class="input-group input-group-lg mb-3">
+          <form id="contactForm" method="post" novalidate action="http://fotograf-slask.pl/send-script.php">
+            <div class="input-group input-group-lg mb-3 form-row">
               <div class="input-group-prepend">
                 <span class="input-group-text">
                   <i class="fas fa-user"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" placeholder="Imię">
+              <input type="text" name="name" class="form-control" placeholder="Imię" required data-error="Napisz jak się nazywasz" pattern="[a-zA-ZąĄććĆęęłŁńŃóÓśŚżŻŹŹźŹ ]+">
             </div>
-            <div class="input-group input-group-lg mb-3">
+            <div class="input-group input-group-lg mb-3 form-row">
               <div class="input-group-prepend">
                 <span class="input-group-text">
                   <i class="fas fa-envelope"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" placeholder="E-mail">
+              <input type="text" name="email" class="form-control" placeholder="E-mail" required data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
             </div>
-            <div class="input-group input-group-lg mb-3">
+            <div class="input-group input-group-lg mb-3 form-row">
               <div class="input-group-prepend">
                 <span class="input-group-text">
                   <i class="fas fa-calendar-alt"></i>
                 </span>
               </div>
-              <input type="date" class="form-control">
+              <input type="date" name="date" class="form-control" required data-error="Wybierz datę">
             </div>
-            <div class="input-group input-group-lg mb-3">
+            <!-- honeypot start -->
+            <span class="form-row honey-row" style="display: none;">
+                <label for="a_password">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
+                <input id="a_password" type="text" name="a_password" autocomplete="off" tabindex="-1">
+            </span>
+            <!-- honeypot end -->
+            <div class="input-group input-group-lg mb-3 form-row">
               <div class="input-group-prepend">
                 <span class="input-group-text">
                   <i class="fas fa-pencil-alt"></i>
                 </span>
               </div>
-              <textarea class="form-control" rows="5" placeholder="Napisz kilka słów o Waszym pomyśle i Waszych oczekiwaniach"></textarea>
+              <textarea class="form-control" name="message" rows="5" placeholder="Napisz kilka słów o Waszym pomyśle i Waszych oczekiwaniach" required data-error="Napisz wiadomość" pattern=".+"></textarea>
             </div>
-            <input type="submit" value="Wyślij" class="btn btn-block btn-lg btn-outline-dark">
+            <input type="submit" value="Wyślij" class="btn btn-block btn-lg btn-outline-dark submit-btn">
           </form>
         </div>
       </div>
@@ -240,6 +248,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+  <script src="contactform.js"></script>
 
   <script>
     // Get the current year for the copyright
