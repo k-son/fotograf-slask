@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <nav id="main-nav" class="navbar navbar-expand-sm fixed-top mb-3 p-3 ">
+  <nav id="main-nav" class="navbar navbar-expand-sm navbar-light fixed-top mb-3 p-4 ">
     <div class="container">
       <a href="#" class="navbar-brand">Spacer po zdjęcia</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -43,18 +43,23 @@
     </div>
   </nav>
 
+  <main>
   <!-- HEADER -->
-  <header>
-    <div class="header container my-5">
-      <img class="img-fluid mt-5" src="https://source.unsplash.com/random/1200x600" alt="">
+  <header class="mb-5">
+    <div class="header container mt-5 image-container">
+      <!--<img class="img-fluid mt-5" src="https://source.unsplash.com/random/1200x600" alt=""> -->
       <h1 class="title">Spacer po zdjęcia</h1>
+    </div>
+    <div class="container text-center my-3">
+      <a href="" class="mr-3"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
     </div>
   </header>
 
   <!-- SESJE -->
   <section class="mb-5" id="sesje">
     <div class="container">
-      <h2 class="h5 mb-3 mb-md-4">Sesje portretowe rodzinne i partnerskie</h2>
+      <h2 class="h4 mb-3 mb-md-4">Sesje portretowe rodzinne i partnerskie</h2>
       <div class="row mb-3 p-3 p-md-5 d-md-flex align-items-center">
         <h3 class="col-md-4 text-center"><em>NATURALNE</em></h3>
         <h3 class="col-md-4 text-center"><em>BEZ POZOWANIA</em></h3>
@@ -63,10 +68,10 @@
       <div class="d-flex flex-column align-items-center mx-auto">
         <p class="lead mb-5 text-center">Wszystko po to, by uwiecznić prawdziwego Ciebie.</p>
         <p class="mb-3">Zabierz ze sobą bliskie Tobie osoby i spotkajmy się w weekend, gdzieś w południowej Polsce w miejscu, które do Was pasuje, w którym czujecie się dobrze. Będę potrzebował ok. 1,5h Waszej uwagi i dobrego nastroju.</p>
-        <p class="mb-5">Ja nazywam się Jacek Jarczok i przez wiele lat zajmowałem się fotografią zawodowo <a href="http://www.jarczok.com/" target="_blank"><i class="fas fa-images"></i></a>. Dzisiaj traktuję ją ponownie jako hobby i świetną okazję do poznawania ludzi.</p>
+        <p class="mb-5">Ja nazywam się Jacek Jarczok i przez wiele lat zajmowałem się fotografią zawodowo <a class="mx-1" href="http://www.jarczok.com/" target="_blank"><i class="fas fa-images"></i></a>. Dzisiaj traktuję ją ponownie jako hobby i świetną okazję do poznawania ludzi.</p>
       </div>
-      <div class="col-5 col-md-3 text-center mx-auto">
-          <img class="img-fluid rounded-circle" src="img/wetplate1_head.jpg" alt="Jacek">
+      <div class="text-center mx-auto jacek-img-container">
+        <img class="w-25 rounded-circle" src="img/wetplate1_head.jpg" alt="Jacek">
       </div>
     </div>
   </section>
@@ -74,7 +79,7 @@
   <!-- GALERIA -->
   <section class="mb-5" id="galeria">
     <div class="container">
-      <h2 class="h5 mb-3">Galeria</h2>
+      <h2 class="h4 mb-3">Galeria</h2>
       <div class="container d-flex flex-wrap justify-content-center col col-md-10 mx-auto">
         <a href=""><img src="https://source.unsplash.com/random/140x140" alt=""></a>
         <a href=""><img src="https://source.unsplash.com/random/140x140" alt=""></a>
@@ -95,7 +100,7 @@
   <!-- CENA -->
   <section class="mb-5" id="cena">
     <div class="container mb-5">
-      <h2 class="h5 mb-3">Cena</h2>
+      <h2 class="h4 mb-3">Cena</h2>
       <p class="mb-1">Cena sesji zależy od odległości jaką muszę pokonać z Pszczyny, gdzie mieszkam do wybranego miejsca oraz potrzebnego na to czasu.</p>
       <p>Podane wyceny mają charakter orientacyjny. <a class="link-skontaktuj" href="#kontakt">Skontaktuj się ze mną</a> by poznać dokładną cenę.</p>
     </div>
@@ -134,7 +139,7 @@
       <div class="row d-flex flex-wrap justify-content-center">
         <div class="col-8 col-sm-5 col-lg-3 mb-2">
           <div class="card text-white">
-            <img src="https://source.unsplash.com/random/400x400" alt="" class="card-img">
+            <img src="img/katowice.jpg" alt="" class="card-img">
             <div class="card-img-overlay d-flex flex-column justify-content-around text-center">
               <h4 class="card-title">Powiat pszczyński</h4>
               <p class="h2">700 pln</p>
@@ -143,7 +148,7 @@
         </div>
         <div class="col-8 col-sm-5 col-lg-3 mb-2">
           <div class="card text-white">
-            <img src="https://source.unsplash.com/random/400x400" alt="" class="card-img">
+            <img src="img/katowice.jpg" alt="" class="card-img">
             <div class="card-img-overlay d-flex flex-column justify-content-around text-center">
               <h4 class="card-title">Katowice /<br>Bielsko-Biała</h4>
               <p class="h2">800 pln</p>
@@ -154,16 +159,16 @@
           <div class="card text-white">
             <img src="https://source.unsplash.com/random/400x400" alt="" class="card-img">
             <div class="card-img-overlay d-flex flex-column justify-content-around text-center">
-              <h4 class="card-title bg-">Kraków</h4>
+              <h4 class="card-title">Beskid Śląski /<br>Beskid Żywiecki</h4>
               <p class="h2">1000 pln</p>
             </div>
           </div>
         </div>
         <div class="col-8 col-sm-5 col-lg-3 mb-2">
           <div class="card text-white">
-            <img src="https://source.unsplash.com/random/400x400" alt="" class="card-img">
+            <img src="img/krakow.jpg" alt="" class="card-img">
             <div class="card-img-overlay d-flex flex-column justify-content-around text-center">
-              <h4 class="card-title">Beskid Śląski /<br>Beskid Żywiecki</h4>
+              <h4 class="card-title bg-">Kraków</h4>
               <p class="h2">1000 pln</p>
             </div>
           </div>
@@ -177,7 +182,7 @@
     <div class="container">
       <div class="row mb-4">
         <div class="container mb-3">
-          <h2 class="h5 mb-4">Napisz do mnie</h2>
+          <h2 class="h4 mb-4">Napisz do mnie</h2>
           <p class="lead">Skorzystaj z formularza kontaktowego lub napisz bezpośrednio na:</p>
           <p class="lead text-muted mail-address"><a class="mr-2" href="mailto:spacerpozdjecia@gmail.com"><i class="fas fa-envelope envelope-1"></i></a> spacerpozdjecia@gmail.com</p>
           <p class="lead">Staram się odpowiadać w ciągu 24 godzin.</p>
@@ -229,6 +234,7 @@
       </div>
     </div>
   </section>
+</main>
 
   <!-- FOOTER -->
   <footer class="py-4">

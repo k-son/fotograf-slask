@@ -1,7 +1,7 @@
 :root {
   --color-font: #292929;
-  --color-gold: #E6C337;
   --color-gold: #d0ac1f;
+  --color-gold: #E0C046;
   --color-silver: #c2c2c2;
   --color-green: #066916;
   --color-green: #32804D;
@@ -16,6 +16,7 @@ html {
 
 body {
   color: var(--color-font);
+  padding-top: 40px;
 }
 
 .gold {
@@ -30,29 +31,58 @@ body {
   background-color: rgba(255, 255, 255, .9);
 }
 
+.fa-instagram,
+.fa-facebook-square {
+  color: var(--color-font);
+}
+
+.fa-instagram:hover,
+.fa-facebook-square:hover {
+  color: var(--color-green);
+}
+
 .envelope-1, 
 .fa-images,
-.link-skontaktuj,
-.link-skontaktuj:hover {
+.link-skontaktuj {
   color: var(--color-blue);
 }
 
-.navbar-brand,
+.envelope-1:hover, 
+.fa-images:hover,
+.link-skontaktuj:hover {
+  color: var(--color-green);
+}
+
+.navbar-brand {
+  color: var(--color-gold) !important;
+  text-transform: uppercase;
+}
+
 .nav-link {
-  color: var(--color-gold);
   text-transform: uppercase;
 }
 
 .navbar-brand:hover,
 .nav-link:hover {
-  color: var(--color-blue);
+  color: var(--color-green);
+}
+
+.navbar-inverse .nav-link:hover {
+  color: red;
 }
 
 .fa-bars {
   color: var(--color-gold); red;
 }
 
-.header {
+header .image-container {
+  height: 100vw;
+  max-height: 600px;
+  background-image: url(https://source.unsplash.com/random/1200x600);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -67,7 +97,7 @@ h2 {
   color: var(--color-silver);
 }
 
-.h5 {
+.h4 {
   color: var(--color-silver);
   text-transform: uppercase;
 }
@@ -80,6 +110,10 @@ h2 {
 #sesje .lead {
   color: var(--color-gold);
   text-transform: uppercase;
+}
+
+.jacek-img-container {
+
 }
 
 .card-cena {
