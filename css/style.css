@@ -16,7 +16,8 @@ html {
 
 body {
   color: var(--color-font);
-  padding-top: 40px;
+  padding-top: 45px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .gold {
@@ -29,33 +30,15 @@ body {
 
 #main-nav {
   background-color: rgba(255, 255, 255, .9);
-}
-
-.fa-instagram,
-.fa-facebook-square {
-  color: var(--color-font);
-}
-
-.fa-instagram:hover,
-.fa-facebook-square:hover {
-  color: var(--color-green);
-}
-
-.envelope-1, 
-.fa-images,
-.link-skontaktuj {
-  color: var(--color-blue);
-}
-
-.envelope-1:hover, 
-.fa-images:hover,
-.link-skontaktuj:hover {
-  color: var(--color-green);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .navbar-brand {
   color: var(--color-gold) !important;
   text-transform: uppercase;
+  font-size: 24px;
 }
 
 .nav-link {
@@ -90,7 +73,32 @@ header .image-container {
   position: absolute;
   bottom: 10%;
   right: 10%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 48px;
+  letter-spacing: 2px;
   color: var(--color-silver);
+}
+
+.fa-instagram,
+.fa-facebook-square {
+  color: var(--color-font);
+}
+
+.fa-instagram:hover,
+.fa-facebook-square:hover {
+  color: var(--color-green);
+}
+
+.envelope-1, 
+.fa-images,
+.link-skontaktuj {
+  color: var(--color-blue);
+}
+
+.envelope-1:hover, 
+.fa-images:hover,
+.link-skontaktuj:hover {
+  color: var(--color-green);
 }
 
 h2 {
@@ -104,6 +112,8 @@ h2 {
 
 #sesje h3 {
   color: var(--color-gold);
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 5px;
   text-transform: uppercase;
 }
 
@@ -121,6 +131,17 @@ h2 {
 }
 
 .card-cena .card-title {
+  color: var(--color-gold);
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+}
+
+.card-city-price {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+}
+
+.card-city-price .h2 {
   color: var(--color-gold);
 }
 
