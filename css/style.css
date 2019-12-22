@@ -1,11 +1,10 @@
 :root {
   --color-font: #292929;
-  --color-gold: #d0ac1f;
   --color-gold: #E0C046;
   --color-silver: #c2c2c2;
   --color-green: #066916;
-  --color-green: #32804D;
   --color-green: #007853;
+  --color-green: #32804D;
   --color-brown: #502E21;
   --color-blue: #1F4A89;
 }
@@ -77,6 +76,13 @@ header .image-container {
   font-size: 48px;
   letter-spacing: 2px;
   color: var(--color-silver);
+}
+
+.logo-header {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  height: 200px;
 }
 
 .fa-instagram,
@@ -155,11 +161,37 @@ h2 {
 
 footer {
   border-top: 1px solid var(--color-gold);
-  background-color: var(--color-gold);
-  color: white;
+  color: var(--color-gold);
 }
 
 
-footer .gold {
-  text-transform: uppercase;
+
+
+@media only screen and (max-width: 992px) {
+ 
+  .logo-header {
+    height: 140px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+ 
+  .logo-header {
+    height: 140px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+ 
+  .logo-header {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+
+  .card-city-price h4,
+  .card-city-price p {
+    font-size: 16px;
+  }
 }
