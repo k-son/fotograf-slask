@@ -42,7 +42,7 @@
   // http://lokeshdhakar.com/projects/lightbox2/index.html#options
   Lightbox.defaults = {
     albumLabel: 'Image %1 of %2',
-    alwaysShowNavOnTouchDevices: false,
+    alwaysShowNavOnTouchDevices: true,
     fadeDuration: 600,
     fitImagesInViewport: true,
     imageFadeDuration: 600,
@@ -51,8 +51,8 @@
     positionFromTop: 50,
     resizeDuration: 700,
     showImageNumberLabel: true,
-    wrapAround: false,
-    disableScrolling: false,
+    wrapAround: true,
+    disableScrolling: true,
     /*
     Sanitize Title
     If the caption data is trusted, for example you are hardcoding it in, then leave this to false.

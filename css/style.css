@@ -28,7 +28,7 @@ body {
 }
 
 #main-nav {
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, .95);
   font-family: 'Bebas Neue', cursive;
   font-size: 20px;
   letter-spacing: 1px;
@@ -58,31 +58,27 @@ body {
 }
 
 header .image-container {
+  width: 100%;
+  max-height: 650px;
+  overflow: hidden;
+  position: relative;
+  /*
   height: 100vw;
   max-height: 600px;
-  background-image: url(https://source.unsplash.com/random/1200x600);
+  background-image: url(../img/galeria/a_17.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
-}
-
-.title  {
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 48px;
-  letter-spacing: 2px;
-  color: var(--color-silver);
+  */
 }
 
 .logo-header {
   position: absolute;
-  bottom: 10%;
-  right: 10%;
-  height: 200px;
+  bottom: 15px;
+  right: 30px;
+  height: 23%;
 }
 
 .fa-instagram,
@@ -132,6 +128,11 @@ h2 {
 
 }
 
+#galeria img {
+  width: 140px;
+  height: auto;
+}
+
 .card-cena {
   border: 1px solid var(--color-gold);
 }
@@ -168,23 +169,24 @@ footer {
 
 
 @media only screen and (max-width: 992px) {
- 
-  .logo-header {
-    height: 140px;
-  }
+
 }
 
 @media only screen and (max-width: 768px) {
- 
-  .logo-header {
-    height: 140px;
-  }
+
 }
 
 @media only screen and (max-width: 576px) {
  
   .logo-header {
-    display: none;
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 354px) {
+  
+  #galeria img {
+    width: 115px;
   }
 }
 
