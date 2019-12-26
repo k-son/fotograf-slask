@@ -160,12 +160,28 @@ h2 {
   color: var(--color-brown);
 }
 
+
+input[type="date"]::before {
+	color: #636c72;
+	content: attr(placeholder);
+}
+input[type="date"] {
+	color: #ffffff;
+}
+input[type="date"]:focus,
+input[type="date"]:valid {
+	color: #636c72;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+	content: "" !important;
+}
+
+
 footer {
   border-top: 1px solid var(--color-gold);
   color: var(--color-gold);
 }
-
-
 
 
 @media only screen and (max-width: 992px) {
