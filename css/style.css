@@ -32,6 +32,7 @@ body {
   font-family: 'Bebas Neue', cursive;
   font-size: 20px;
   letter-spacing: 1px;
+  transition: top .5s;
 }
 
 .navbar-brand {
