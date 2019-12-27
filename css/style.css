@@ -92,6 +92,10 @@ header .image-container {
   color: var(--color-green);
 }
 
+.fa-images {
+  font-size: 24px;
+}
+
 .envelope-1, 
 .fa-images,
 .link-skontaktuj {
