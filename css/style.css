@@ -50,12 +50,8 @@ body {
   color: var(--color-green);
 }
 
-.navbar-inverse .nav-link:hover {
-  color: red;
-}
-
 .fa-bars {
-  color: var(--color-gold); red;
+  color: var(--color-gold);
 }
 
 header .image-container {
@@ -73,6 +69,10 @@ header .image-container {
   background-size: contain;
   position: relative;
   */
+}
+
+.header-img {
+
 }
 
 .logo-header {
