@@ -8,7 +8,7 @@ body.hidden-scroll {
   top: 0;
   bottom: 0;
   background: #fff;
-  opacity: .85;
+  opacity: .9;
   display: none;
   z-index: 1035; }
 
@@ -109,7 +109,7 @@ body.hidden-scroll {
       border: 0 none;
       width: 100%;
       height: auto;
-    margin-left: 7px; }
+    margin-left: 4px; //for centering img}
       @media (min-width: 35.5em) {
         .sl-wrapper .sl-image img {
           border: 0 none; } }
