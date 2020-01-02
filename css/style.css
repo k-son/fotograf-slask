@@ -80,7 +80,8 @@ header .image-container {
   position: absolute;
   bottom: 15px;
   right: 30px;
-  height: 23%;
+  height: 30%;
+  opacity: .8;
 }
 
 .fa-instagram,
@@ -201,7 +202,7 @@ footer {
 @media only screen and (max-width: 576px) {
  
   .logo-header {
-    left: 30px;
+    //left: 40px;
   }
 }
 
