@@ -2,8 +2,6 @@
   --color-font: #292929;
   --color-gold: #E0C046;
   --color-silver: #c2c2c2;
-  --color-green: #066916;
-  --color-green: #007853;
   --color-green: #32804D;
   --color-brown: #502E21;
   --color-blue: #1F4A89;
@@ -60,20 +58,6 @@ header .image-container {
   max-height: 650px;
   overflow: hidden;
   position: relative;
-  /*
-  height: 100vw;
-  max-height: 600px;
-  background-image: url(../img/galeria/a_17.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  */
-}
-
-.header-img {
-
 }
 
 .logo-header {
@@ -200,10 +184,7 @@ footer {
 }
 
 @media only screen and (max-width: 576px) {
- 
-  .logo-header {
-    //left: 40px;
-  }
+
 }
 
 @media only screen and (max-width: 354px) {
@@ -218,5 +199,122 @@ footer {
   .card-city-price h4,
   .card-city-price p {
     font-size: 16px;
+  }
+}
+
+
+/* Error 404 500 pages */
+body.body-404 {
+  padding-top: 0;
+}
+
+.error-container {
+  position: relative;
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px;
+}
+
+.error-img {
+  max-height: 300px;
+  max-width: calc(100% - 48px);
+  min-height: 80px;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.error-error {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: capitalize;
+  color: #1F4A89;
+  margin: -24px 0 12px;
+}
+
+.error-error span {
+  display: inline-block;
+  line-height: 1;
+  color: #fff;
+  background-color: #1F4A89;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.error-text {
+  line-height: 1.2;
+  padding: 24px;
+  margin-bottom: 12px;
+}
+
+.error-heading {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.error-para {
+  font-size: 16px;
+}
+
+.error-link {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-font);
+  padding: 4px 12px;
+  border: 3px solid #1F4A89;
+  border-radius: 13px;
+  transition: all .2s;
+}
+
+.error-link:hover {
+  cursor: pointer;
+  color: #1F4A89;
+}
+
+.error-link:active {
+  color: #32804D;
+  border: 3px solid #32804D;
+}
+
+.error-contactLink {
+  font-size: 16px;
+  text-decoration: none;
+  color: #1F4A89;
+  margin-top: 8px;
+}
+
+.error-contactLink:hover {
+  text-decoration: underline;
+}
+
+.error-contactLink:active {
+  color: #32804D;
+}
+
+@media only screen and (min-width: 601px) {
+  .error-error {
+    font-size: 54px;
+    margin: -24px 0 40px 0;
+  }
+
+  .error-heading {
+    font-size: 32px;
+  }
+
+  .error-para {
+    font-size: 20px;
+  }
+
+  .error-link {
+    font-size: 20px;
+    padding: 4px 16px;
   }
 }
